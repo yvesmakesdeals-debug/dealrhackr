@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DEALRHCKR — Search Every Dealer. Nationwide.</title>
+    <meta name="description" content="Browse real inventory from dealerships across every state. Find your car, then let our licensed concierge handle the rest." />
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!--
+      Hidden form — Netlify reads this at deploy time to enable form capture.
+      The React app submits to this form via fetch.
+      All leads appear in your Netlify dashboard under Forms.
+    -->
+    <form name="lead" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text"  name="lead_id"   />
+      <input type="text"  name="name"      />
+      <input type="text"  name="phone"     />
+      <input type="email" name="email"     />
+      <input type="text"  name="vehicle"   />
+      <input type="text"  name="trim"      />
+      <input type="text"  name="price"     />
+      <input type="text"  name="mileage"   />
+      <input type="text"  name="dealer"    />
+      <input type="text"  name="location"  />
+      <input type="text"  name="condition" />
+      <input type="text"  name="fee"       />
+      <textarea           name="notes"     ></textarea>
+    </form>
+
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

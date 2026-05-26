@@ -1,0 +1,13 @@
+[build]
+  command   = "npm install && npm run build"
+  publish   = "dist"
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+
+# Required for React SPA — all routes serve index.html
+[[redirects]]
+  from   = "/*"
+  to     = "/index.html"
+  status = 200
